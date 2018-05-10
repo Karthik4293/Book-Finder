@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "187541138764",
+    "firebase_url": "https://book-finder-1f3de.firebaseio.com",
+    "project_id": "book-finder-1f3de",
+    "storage_bucket": "book-finder-1f3de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:187541138764:android:3a602244ec808412",
+        "android_client_info": {
+          "package_name": "com.amitshekhar.tflite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "187541138764-um22ooiig694qf9t347js2buvjl83lp9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5s6UKMWEXhbIVXBonMJLZ-fh3w8fzRWk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
