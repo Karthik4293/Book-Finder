@@ -50,7 +50,7 @@
         android:layout_height="48dp"
         android:layout_gravity="bottom|center"
         android:layout_marginBottom="50dp"
-        android:text="@string/toggle_camera"
+        android:text="Get Ratings"
         android:textAllCaps="false"
         android:textColor="@android:color/black" />
 

@@ -1,6 +1,7 @@
 package com.amitshekhar.tflite;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
@@ -99,10 +100,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnToggleCamera.setOnClickListener(new View.OnClickListener() {
+        btnToggleCamera.setOnClickListener(
+
+                new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                cameraView.toggleFacing();
+                //cameraView.toggleFacing();
+               Intent intent = new Intent(MainActivity.this, Ratingctivity.class);
+               startActivity(intent);
+              //  parseFile();
             }
         });
 
@@ -193,16 +199,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void downloadFile() {
+        Log.d("hello everyone","Downlod method entered");
         FirebaseStorage storage = FirebaseStorage.getInstance();
         StorageReference storageRef = storage.getReferenceFromUrl("gs://book-finder-1f3de.appspot.com");
-        StorageReference  islandRef = storageRef.child("file.txt");
+        StorageReference  islandRef = storageRef.child("new.txt");
+        Log.d("ref",islandRef.getPath());
 
-        File rootPath = new File(Environment.getExternalStorageDirectory(), "book_finder");
+        File rootPath = new File(Environment.getExternalStorageDirectory(), "ls_load_file");
         if(!rootPath.exists()) {
             rootPath.mkdirs();
         }
 
-        final File localFile = new File(rootPath,"imageName.txt");
+        final File localFile = new File(rootPath,"book_finder.txt");
+        Log.d("FIle path", localFile.getAbsolutePath());
 
         islandRef.getFile(localFile).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
             @Override

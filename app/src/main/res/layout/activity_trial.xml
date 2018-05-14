@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".trial">
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            tools:text="Book Title :" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="527dp"
+            android:layout_height="40dp"
+            android:text="TextView"
+            app:layout_column="1"
+            app:layout_row="0"
+            tools:text="Compilers: Principles, Techniques, and Tools" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_column="0"
+            app:layout_row="1"
+            tools:text="Authors  :   Alfred V. Aho, Ravi Sethi, Jeffrey D. Ullman" />
+
+    </android.support.v7.widget.GridLayout>
+</android.support.constraint.ConstraintLayout>
